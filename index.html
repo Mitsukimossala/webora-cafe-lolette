@@ -1,29 +1,65 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Café Lolette · Crêperie-café à La Garenne-Colombes</title><meta name="description" content="Crêpes, galettes et café place de la Liberté, ouvert 7j/7.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-<style>:root{--bg:#fff8f0;--ink:#3b2a1e;--accent:#c8693a;--card:#fff;--hero:linear-gradient(160deg,#f3c892,#c8693a);--heroink:#fff}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:600}
-.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 24px;background:var(--hero);color:var(--heroink)}
-.hero .tag{letter-spacing:.25em;text-transform:uppercase;font-size:.75rem;opacity:.85}
-.hero h1{font-size:clamp(2.6rem,11vw,5rem);margin:14px 0}
-.hero p{max-width:520px;font-size:1.1rem;opacity:.92}
-.btn{display:inline-block;margin-top:28px;padding:14px 30px;border-radius:40px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-.btn.ghost{background:transparent;border:1.5px solid currentColor;color:inherit;margin-left:8px}
-section{padding:64px 24px;max-width:960px;margin:auto}
-section h2{font-size:2rem;margin-bottom:22px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:var(--card);border-radius:18px;padding:24px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
-.card h3{font-size:1.2rem;margin-bottom:6px;color:var(--accent)}
-.stars{text-align:center;font-size:1.1rem}.stars b{font-size:2.4rem;font-family:'Playfair Display',serif;color:var(--accent)}
-table{width:100%;border-collapse:collapse}td{padding:8px 4px;border-bottom:1px solid rgba(0,0,0,.08)}td:last-child{text-align:right}
-.info a{color:var(--accent)}iframe{width:100%;height:260px;border:0;border-radius:18px;margin-top:18px}
-footer{text-align:center;padding:30px;font-size:.8rem;opacity:.6}
-.fade{animation:up .9s ease both}@keyframes up{from{opacity:0;transform:translateY(20px)}}</style></head><body>
-<header class="hero"><div class="fade"><div class="tag">Crêperie · Café · Ouvert 7j/7</div><h1>Café Lolette</h1><p>Crêpes, galettes et douceurs, au cœur de la place de la Liberté à La Garenne-Colombes.</p>
-<a class="btn" href="#carte">Voir la carte</a><a class="btn ghost" href="tel:+33983344493">Appeler</a></div></header>
-<section><h2>À la carte</h2><div class="grid"><div class="card"><h3>Galettes salées</h3><p>Les classiques et des recettes plus gourmandes, préparées à la minute.</p></div><div class="card"><h3>Crêpes sucrées</h3><p>Des crêpes traditionnelles aux envies plus originales.</p></div><div class="card"><h3>Café & boissons</h3><p>Une pause café en terrasse, sur la place de la Liberté.</p></div><div class="card"><h3>Sur place ou à emporter</h3><p>Une petite faim ? On vous prépare ça à emporter.</p></div></div></section>
-<section class="stars"><b>4,3/5</b><p>★★★★★ sur 660 avis Google</p><p style="margin-top:10px;opacity:.8">Une adresse chaleureuse et conviviale, appréciée des Garennois.</p></section>
-<section class="info"><h2>Infos pratiques</h2><div class="grid"><div class="card"><h3>Adresse</h3><p>11 place de la Liberté<br>92250 La Garenne-Colombes</p><p style="margin-top:8px">📞 <a href="tel:+33983344493">09 83 34 44 93</a></p><p style="margin-top:8px">Paiement Up accepté</p></div>
-<div class="card"><h3>Horaires</h3><table><tr><td>Tous les jours</td><td>9h – minuit</td></tr></table></div></div>
-<iframe loading="lazy" src="https://maps.google.com/maps?q=Café+Lolette+11+place+de+la+Liberté+La+Garenne-Colombes&output=embed"></iframe></section>
-<footer>© 2026 Café Lolette · Site réalisé par Webora</footer></body></html>
+<title>Café Lolette · Crêperie-café, place de la Liberté · La Garenne-Colombes</title>
+<meta name="description" content="Crêpes, galettes de sarrasin, cidres et café. Ouvert 7j/7 de 9h à minuit, 11 place de la Liberté, La Garenne-Colombes.">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@600&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#c8312b;--navy:#1f2a44;--cream:#f6efe2;--sky:#cfdde3;--wood:#8a5a36}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Work Sans',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+.bar{position:sticky;top:0;z-index:9;background:var(--navy);color:var(--cream);display:flex;justify-content:space-between;align-items:center;padding:12px 18px}
+.bar b{font-family:'Caveat',cursive;font-size:1.7rem}.bar a{color:var(--navy);background:var(--cream);padding:8px 14px;border-radius:30px;font-weight:700;text-decoration:none;font-size:.85rem}
+.hero{position:relative;min-height:88vh;background:url(img/terrasse.jpg) center/cover;display:flex;align-items:flex-end}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,42,68,.1),rgba(31,42,68,.85))}
+.hero .in{position:relative;z-index:2;padding:28px 22px 46px;color:#fff}
+.badge{display:inline-block;background:var(--red);color:#fff;font-weight:700;padding:6px 12px;transform:rotate(-3deg);border:2px dashed #fff;font-size:.8rem;letter-spacing:.1em}
+.hero h1{font-family:'Abril Fatface',serif;font-size:clamp(3.2rem,15vw,6.5rem);line-height:.95;margin:14px 0 6px}
+.hero .script{font-family:'Caveat',cursive;font-size:1.8rem;color:#ffd9a8}
+.btns{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}.btns a{padding:14px 22px;border-radius:4px;font-weight:700;text-decoration:none}
+.b1{background:var(--red);color:#fff;box-shadow:4px 4px 0 #fff}.b2{border:2px solid #fff;color:#fff}
+.ticker{background:var(--red);color:#fff;white-space:nowrap;overflow:hidden;padding:12px 0;font-family:'Abril Fatface';font-size:1.3rem}
+.ticker span{display:inline-block;animation:slide 18s linear infinite}@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:60px 20px;max-width:1000px;margin:auto}
+.kicker{font-family:'Caveat',cursive;color:var(--red);font-size:1.6rem}
+h2{font-family:'Abril Fatface',serif;font-size:2.4rem;line-height:1.05;margin-bottom:18px}
+.sign{background:#fffaf1;border:3px solid var(--red);outline:6px solid var(--sky);padding:26px;transform:rotate(-1deg);box-shadow:0 18px 40px rgba(0,0,0,.12)}
+.menu{display:grid;gap:22px}.item{display:flex;align-items:baseline;gap:8px}.item b{font-size:1.15rem}.item i{flex:1;border-bottom:2px dotted var(--wood);transform:translateY(-4px)}
+.item small{display:block;color:#5d6577;font-size:.9rem;margin-top:2px}
+.polas{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.pola{background:#fff;padding:8px 8px 34px;box-shadow:0 10px 25px rgba(0,0,0,.15);position:relative}.pola img{width:100%;height:180px;object-fit:cover;display:block}
+.pola span{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-family:'Caveat';font-size:1.3rem}
+.pola:nth-child(1){transform:rotate(-3deg)}.pola:nth-child(2){transform:rotate(2deg)}.pola:nth-child(3){transform:rotate(1.5deg)}.pola:nth-child(4){transform:rotate(-2deg)}
+.navy{background:var(--navy);color:var(--cream);max-width:none}.navy .w{max-width:1000px;margin:auto}
+.big{font-family:'Abril Fatface';font-size:5rem;color:#ffd9a8;line-height:1}
+.events{display:grid;gap:14px;margin-top:20px}.ev{border:1px solid rgba(246,239,226,.3);padding:18px;border-radius:6px}
+.hours{font-size:1.1rem;line-height:1.9}.hours strong{font-family:'Abril Fatface';font-size:2rem;color:var(--red)}
+iframe{width:100%;height:260px;border:0;margin-top:18px;filter:sepia(.25)}
+footer{text-align:center;padding:26px;font-size:.8rem;background:var(--navy);color:#aab}
+.rv{opacity:0;transform:translateY(30px);transition:1s}.rv.on{opacity:1;transform:none}
+@media(min-width:800px){.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.polas{grid-template-columns:repeat(4,1fr)}.events{grid-template-columns:repeat(3,1fr)}}
+</style></head><body>
+<div class="bar"><b>Café Lolette</b><a href="tel:+33983344493">📞 09 83 34 44 93</a></div>
+<header class="hero"><div class="in"><span class="badge">OUVERT 7J/7 · 9H – MINUIT</span>
+<h1>Café<br>Lolette</h1><div class="script">Boire, manger, rire, profiter.</div>
+<p style="margin-top:8px;max-width:420px">Crêpes, galettes de sarrasin, cidres et café, sur la place de la Liberté à La Garenne-Colombes.</p>
+<div class="btns"><a class="b1" href="#carte">Voir la carte</a><a class="b2" href="#venir">Nous trouver</a></div></div></header>
+<div class="ticker"><span>★ Galettes de sarrasin ★ Crêpes sucrées ★ Caramel au beurre salé ★ Cidres ★ Café ★ Terrasse ★ Galettes de sarrasin ★ Crêpes sucrées ★ Caramel au beurre salé ★ Cidres ★ Café ★ Terrasse&nbsp;</span></div>
+<section id="carte" class="split"><div class="rv"><div class="kicker">À l'ardoise</div><h2>Sarrasin, beurre salé<br>& cidre bien frais.</h2>
+<div class="sign"><div class="menu">
+<div class="item"><b>Galettes de sarrasin</b><i></i></div><small>Les classiques bretonnes, et des recettes plus gourmandes.</small>
+<div class="item"><b>Crêpes sucrées</b><i></i></div><small>Caramel au beurre salé maison, et toutes les envies sucrées.</small>
+<div class="item"><b>Cidres</b><i></i></div><small>Pour accompagner galettes et crêpes, comme en Bretagne.</small>
+<div class="item"><b>Café & boissons</b><i></i></div><small>De 9h, pour le café du matin en terrasse.</small>
+</div><p style="margin-top:16px;font-family:Caveat;font-size:1.3rem;color:var(--red)">Sur place ou à emporter · Paiement Up accepté</p></div></div>
+<div class="rv"><img src="img/crepe.jpg" alt="Crêpe au sucre et orange" style="width:100%;border-radius:4px;box-shadow:10px 10px 0 var(--red)"></div></section>
+<section><div class="kicker rv">La maison</div><h2 class="rv">Un vrai café de quartier.</h2>
+<div class="polas rv"><div class="pola"><img src="img/sarrasin.jpg" alt=""><span>la salle</span></div><div class="pola"><img src="img/boire.jpg" alt=""><span>notre devise</span></div><div class="pola"><img src="img/place.jpg" alt=""><span>la place</span></div><div class="pola"><img src="img/terrasse.jpg" alt=""><span>la terrasse</span></div></div></section>
+<section class="navy"><div class="w split"><div class="rv"><div class="big">4,3★</div><p style="font-size:1.2rem;margin-top:6px">sur plus de 660 avis Google.</p><p style="opacity:.75;margin-top:10px">Les galettes et les crêpes sont les plats les plus cités par les clients.</p></div>
+<div class="rv"><div class="kicker" style="color:#ffd9a8">Vos événements</div><h2>Baptêmes, anniversaires, repas de famille.</h2><p style="opacity:.85">Le Café Lolette accueille vos événements privés. Appelez-nous pour en parler.</p>
+<div class="btns"><a class="b1" href="tel:+33983344493">Réserver un événement</a></div></div></div></section>
+<section id="venir" class="split"><div class="rv"><div class="kicker">On vous attend</div><h2>11 place de la Liberté</h2><p>92250 La Garenne-Colombes</p>
+<p class="hours" style="margin-top:16px"><strong>9h – minuit</strong><br>tous les jours, 7 jours sur 7</p>
+<p style="margin-top:12px">📞 <a href="tel:+33983344493" style="color:var(--red);font-weight:700">09 83 34 44 93</a></p></div>
+<div class="rv"><iframe loading="lazy" src="https://maps.google.com/maps?q=Café+Lolette+11+place+de+la+Liberté+La+Garenne-Colombes&output=embed"></iframe></div></section>
+<footer>© 2026 Café Lolette · Site réalisé par Webora</footer>
+<script>const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>o.observe(e))</script>
+</body></html>
